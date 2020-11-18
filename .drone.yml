@@ -1,10 +1,21 @@
 ---
 kind: pipeline
 type: docker
-name: default
+name: pipeline1
 
 steps:
 - name: say hello
   image: alpine
   commands:
   - echo "hello world"
+  
+---
+kind: pipeline
+type: docker
+name: pipeline2
+
+steps:
+- name: say hello2
+  image: alpine
+  commands:
+  - echo "hello world2"
